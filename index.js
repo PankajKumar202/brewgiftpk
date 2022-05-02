@@ -17,7 +17,8 @@ app.post("/paynow", [parseUrl, parseJson], (req, res) => {
   // Route for making payment
   console.log(">>>>",req.body)
   var paymentDetails = {
-    orderID: req.body.orderItem,
+    // id:req.body.id,
+    orderID: req.body.id,
     amount: req.body.Amount,
     customerId: req.body.senderName,
     customerEmail: req.body.senderEmail,
